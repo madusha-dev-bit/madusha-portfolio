@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madusha | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #101014;
+            color: #ffffff;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #181820;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            color: #e8b4c8;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #e8b4c8;
+        }
+
+        section {
+            padding: 85px 10%;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #e8b4c8;
+        }
+
+        .hero p {
+            color: #c7c7d0;
+            font-size: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 28px;
+            background: #e8b4c8;
+            color: #101014;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        h2 {
+            color: #e8b4c8;
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .content {
+            color: #ccccd5;
+            max-width: 800px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1b1b24;
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #35313b;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            border-color: #e8b4c8;
+        }
+
+        .card h3 {
+            color: #e8b4c8;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #c7c7d0;
+        }
+
+        .contact a {
+            color: #e8b4c8;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #181820;
+            color: #aaa;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            section {
+                padding: 65px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Madusha.</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#fashion">Fashion</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Hello, I'm <span>Madusha</span></h1>
+        <p>Software Engineering Enthusiast | Fashion Designer</p>
+        <a href="#about" class="btn">Discover More</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p class="content">
+            Hello! I'm Madusha. I am passionate about technology,
+            software development, creativity and fashion design.
+            I enjoy learning new skills and turning creative ideas
+            into meaningful projects. My goal is to combine technology
+            and creativity to create something unique.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Software Development</h3>
+                <p>Learning web development and programming.</p>
+            </div>
+
+            <div class="card">
+                <h3>HTML & CSS</h3>
+                <p>Creating and designing beautiful websites.</p>
+            </div>
+
+            <div class="card">
+                <h3>Creative Design</h3>
+                <p>Exploring creative ideas and digital designs.</p>
+            </div>
+
+            <div class="card">
+                <h3>Fashion Design</h3>
+                <p>Interested in fashion, styling and clothing design.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Portfolio Website</h3>
+                <p>A personal website showcasing my skills and creativity.</p>
+            </div>
+
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>Exploring modern website layouts and user interfaces.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="fashion">
+        <h2>Fashion Design</h2>
+
+        <p class="content">
+            Fashion is another part of my creativity.
+            I love exploring different styles, colors, outfits
+            and unique fashion ideas.
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <div class="content contact">
+            <p>Email:
+                <a href="mailto:madushakaviduni2002@gmail.com">
+                    madushakaviduni2002@gmail.com
+                </a>
+            </p>
+
+            <p>GitHub:
+                <a href="https://github.com/madusha-dev-bit" target="_blank">
+                    github.com/madusha-dev-bit
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Madusha. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
